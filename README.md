@@ -9,6 +9,14 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymolpro-feedst
 
 Summary: Python package supporting Molpro quantum chemistry
 
+Documentation: https://molpro.github.io/pymolpro
+
+pymolpro is a Python library that provides support for working with the Molpro quantum chemistry package.
+The principal feature is
+the `Project` class that provides access to a complete Molpro job, including input
+and output files together with metadata such as job status information.
+
+
 Current build status
 ====================
 
