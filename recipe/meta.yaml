@@ -38,6 +38,13 @@ about:
   license_file: LICENSE
   home: https://github.com/molpro/pymolpro
   summary: Python package supporting Molpro quantum chemistry
+  doc_url: https://molpro.github.io/pymolpro
+  doc_source_url: https://github.com/molpro/pymolpro/blob/master/README.rst
+  description: |
+    pymolpro is a Python library that provides support for working with the Molpro quantum chemistry package.
+    The principal feature is
+    the `Project` class that provides access to a complete Molpro job, including input
+    and output files together with metadata such as job status information.
 
 extra:
   recipe-maintainers:
