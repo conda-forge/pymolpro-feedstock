@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pysjef >=1.23.0
+    - pysjef >=1.29.2
     - numpy >=1.12
     - regex
 
