@@ -19,11 +19,13 @@ requirements:
     - python >=3.6
     - versioneer
     - pip
+    - scipy
   run:
     - python >=3.6
     - pysjef >=1.29.2
     - numpy >=1.12
     - regex
+    - scipy
 
 test:
   imports:
