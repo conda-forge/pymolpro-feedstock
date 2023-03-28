@@ -1,11 +1,11 @@
-About pymolpro
-==============
+About pymolpro-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymolpro-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/molpro/pymolpro
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymolpro-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python package supporting Molpro quantum chemistry
 
