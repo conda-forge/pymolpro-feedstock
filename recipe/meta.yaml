@@ -22,7 +22,7 @@ requirements:
     - scipy
   run:
     - python >=3.6
-    - pysjef >=1.29.2
+    - pysjef >=1.31.0
     - numpy >=1.12
     - regex
     - scipy
