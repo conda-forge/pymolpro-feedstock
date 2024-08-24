@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: a7f2ecfce76c0d2530f4ff7a94291965fb39e4d945641291fa0a82e02526fe77
+  sha256: e973410d6b0ac0f6a785f8fa044c2c1123019c712c02086ebd17d602f55c7566
 
 build:
   noarch: python
@@ -24,7 +24,6 @@ build:
     git tag
     {{ PYTHON }} -m setuptools_scm
     {{ PYTHON }} --version
-    {{ PYTHON }} -m pip install numgrid==2.1.1
     {{ PYTHON }} -m pip install . -vv
     ls -lR
   number: 0
@@ -43,6 +42,7 @@ requirements:
     - regex
     - scipy
     - chemcoord
+    - quadpy
 
 test:
   imports:
