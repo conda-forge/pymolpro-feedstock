@@ -1,5 +1,5 @@
 {% set name = "pymolpro" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,26 +7,35 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: 1b39ddce05b1e76ed2925511a365e2b77a38281350065061f551dabc32c972dd
+  sha256: d40ff074f8669bd01af603c7cddc94b3c783a0628f7a7227b5fdd7e426192995
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: |
+    git init
+    git config user.name nobody
+    git config user.email a@b.com
+    git add .
+    git commit -am .
+    git tag {{ version }}
+    {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
     - python >=3.6
-    - versioneer
     - pip
     - scipy
+    - setuptools
+    - setuptools_scm
   run:
     - python >=3.6
-    - pysjef >=1.38.35
+    - pysjef >=1.39.0
     - numpy <2
     - regex
     - scipy
     - chemcoord
+    - quadpy
 
 test:
   imports:
@@ -51,6 +60,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - nick-wilson
     - pjknowles
     - molpro-owner
