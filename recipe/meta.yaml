@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - python >=3.6
-    - versioneer
     - pip
     - scipy
+    - setuptools
   run:
     - python >=3.6
     - pysjef >=1.39.0
