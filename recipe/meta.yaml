@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: git init && git add . && git commit -am . &&  git tag {{ version }} && {{ PYTHON }} -m pip install . -vv
+  script: git config user.name nobody && git config user.email a@b.com && git init && git add . && git commit -am . &&  git tag {{ version }} && {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
