@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: echo script ; pwd; {{ PYTHON }} -m pip install . -vv ; echo end script
   number: 0
 
 requirements:
