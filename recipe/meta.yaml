@@ -34,6 +34,7 @@ requirements:
     - scipy
     - setuptools
     - setuptools_scm
+    - numgrid=2.1.1
   run:
     - python >=3.6
     - pysjef >=1.39.0
@@ -41,6 +42,7 @@ requirements:
     - regex
     - scipy
     - chemcoord
+    - numgrid=2.1.1
 
 test:
   imports:
