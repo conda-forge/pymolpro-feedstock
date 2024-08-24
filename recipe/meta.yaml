@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: echo script ; pwd; {{ PYTHON }} -m pip install . -vv ; echo end script
+  script: git init && git add . &&  git tag {{ version }} && {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
