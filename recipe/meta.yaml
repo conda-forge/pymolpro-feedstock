@@ -20,6 +20,7 @@ build:
     git commit -am .
     git tag {{ version }}
     git log
+    {{ PYTHON }} -m setuptools_scm
     {{ PYTHON }} -m pip install . -vv
     ls -lR
   number: 0
