@@ -12,20 +12,13 @@ source:
 build:
   noarch: python
   script: |
-    echo 'configure git'
     git init
     git config user.name nobody
     git config user.email a@b.com
     git add .
     git commit -am .
-    echo version = {{ version }}
     git tag {{ version }}
-    git log
-    git tag
-    {{ PYTHON }} -m setuptools_scm
-    {{ PYTHON }} --version
     {{ PYTHON }} -m pip install . -vv
-    ls -lR
   number: 0
 
 requirements:
