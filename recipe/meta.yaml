@@ -1,5 +1,5 @@
 {% set name = "pymolpro" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: 1b39ddce05b1e76ed2925511a365e2b77a38281350065061f551dabc32c972dd
+  sha256: a7f2ecfce76c0d2530f4ff7a94291965fb39e4d945641291fa0a82e02526fe77
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - scipy
   run:
     - python >=3.6
-    - pysjef >=1.38.35
+    - pysjef >=1.39.0
     - numpy <2
     - regex
     - scipy
@@ -51,6 +51,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - nick-wilson
     - pjknowles
     - molpro-owner
