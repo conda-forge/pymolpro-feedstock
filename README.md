@@ -152,6 +152,5 @@ Feedstock Maintainers
 =====================
 
 * [@molpro-owner](https://github.com/molpro-owner/)
-* [@nick-wilson](https://github.com/nick-wilson/)
 * [@pjknowles](https://github.com/pjknowles/)
 
