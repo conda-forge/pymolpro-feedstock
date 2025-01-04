@@ -19,17 +19,17 @@ build:
     git commit -am .
     git tag {{ version }}
     {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - scipy
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pysjef >=1.39.0
     - numpy <2
     - regex
@@ -44,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   license: MIT
