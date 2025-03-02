@@ -1,5 +1,5 @@
 {% set name = "pymolpro" %}
-{% set version = "1.11.1" %}
+{% set version = "1.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: 6986e54c31705e154b5049fee1ce7bf491695b1c4449001b08ef70b533e43b8f
+  sha256: 74cb779ea67b2332fab501e089ac54e0a167009a1b54b2571a61e0363aa8b0c6
 
 build:
   noarch: python
