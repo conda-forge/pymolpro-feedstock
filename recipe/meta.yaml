@@ -36,7 +36,7 @@ requirements:
     - scipy
     - chemcoord
     - quadpy
-    - ase >=3.25.0
+    - ase
 
 test:
   imports:
