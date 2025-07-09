@@ -19,6 +19,7 @@ build:
     git commit -am .
     git tag {{ version }}
     {{ PYTHON }} -m pip install . -vv
+    {{ PYTHON }} -m pip install trexio
   number: 0
 
 requirements:
