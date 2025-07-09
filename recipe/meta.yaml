@@ -30,12 +30,13 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - pysjef >=1.39.0
-    - numpy <2
+    - pysjef >=1.41.2
+    - numpy
     - regex
     - scipy
     - chemcoord
     - quadpy
+    - ase >=3.25.0
 
 test:
   imports:
