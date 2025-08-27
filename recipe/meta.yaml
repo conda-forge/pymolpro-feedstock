@@ -1,5 +1,5 @@
 {% set name = "pymolpro" %}
-{% set version = "1.15.2" %}
+{% set version = "1.15.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: b39b83045670abed1e16004ed846f0a16870d28d962dfa8b724309ca67172d76
+  sha256: f0b32175e6a1302bb229446ccf01701df8bc3381af45d32cc2935017d8ab52ac
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ build:
     git commit -am .
     git tag {{ version }}
     {{ PYTHON }} -m pip install . -vv
+    cp molpro_input.py $PREFIX/bin/molpro_input.py
   number: 0
 
 requirements:
