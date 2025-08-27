@@ -19,7 +19,7 @@ build:
     git commit -am .
     git tag {{ version }}
     {{ PYTHON }} -m pip install . -vv
-    cp molpro_input.py $PREFIX/bin/molpro_input.py
+    cp pymolpro/molpro_input.py $PREFIX/bin/molpro_input.py
   number: 0
 
 requirements:
