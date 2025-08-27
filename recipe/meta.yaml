@@ -20,7 +20,7 @@ build:
     git tag {{ version }}
     {{ PYTHON }} -m pip install . -vv
     cp pymolpro/molpro_input.py $PREFIX/bin/molpro_input.py
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -38,6 +38,7 @@ requirements:
     - chemcoord
     - quadpy
     - ase
+    - jsonschema
 
 test:
   imports:
