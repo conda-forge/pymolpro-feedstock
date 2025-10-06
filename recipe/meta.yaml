@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: 232e6faa7797995de8cc2098746a1493704f1b6e5841ce81c6922db453003a7a
+  sha256: 25be730b4178a436e755c3f8b3697671a0f60e1318167ba5499955dd2453642d
 
 build:
   noarch: python
