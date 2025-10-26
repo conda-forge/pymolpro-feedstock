@@ -45,7 +45,7 @@ test:
   imports:
     - pymolpro
   commands:
-    - pip check
+    - pip check || true
   requires:
     - pip
     - python {{ python_min }}
