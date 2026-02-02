@@ -27,19 +27,20 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - scipy
+    - scipy >=1.9.3
     - setuptools
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - pysjef >=1.41.2
+    - pysjef >=1.42.3
     - numpy
     - regex
-    - scipy
+    - scipy >=1.9.3
     - chemcoord
     - quadpy
     - ase
-    - jsonschema
+    - jsonschema >=4.0.0
+    - pandas <3
 
 test:
   imports:
