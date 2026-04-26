@@ -11,7 +11,8 @@ Summary: Python package supporting Molpro quantum chemistry
 
 Documentation: https://molpro.github.io/pymolpro
 
-pymolpro is a Python library that provides support for working with the Molpro quantum chemistry package.
+pymolpro is a Python library that provides support for working with the
+Molpro quantum chemistry package.
 The principal feature is
 the `Project` class that provides access to a complete Molpro job, including input
 and output files together with metadata such as job status information.
@@ -21,11 +22,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17642&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymolpro-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
