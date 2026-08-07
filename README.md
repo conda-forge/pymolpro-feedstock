@@ -200,6 +200,3 @@ Feedstock Maintainers
 * [@molpro-owner](https://github.com/molpro-owner/)
 * [@pjknowles](https://github.com/pjknowles/)
 
-
-<!-- dummy commit to enable rerendering -->
-
