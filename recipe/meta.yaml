@@ -1,5 +1,5 @@
 {% set name = "pymolpro" %}
-{% set version = "1.21.8" %}
+{% set version = "1.21.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molpro/pymolpro/archive/{{ version }}.tar.gz
-  sha256: aa3b89cdab8c6b31d3e1cbad0f9e40a654c0d0a652d915ff3f88378f3e148074
+  sha256: e102e33d86815bcf2e3276c4d8d32fe75210d58ed294f9c325eb7db6e7bd6631
 
 build:
   noarch: python
@@ -32,15 +32,17 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - pysjef >=1.42.3
+    - pysjef >=1.45.29
     - numpy
     - regex
+    - lxml
     - scipy >=1.9.3
     - chemcoord
     - quadpy
     - ase
     - jsonschema >=4.0.0
     - pandas <3
+    - jinja2
 
 test:
   imports:
