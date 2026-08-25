@@ -32,9 +32,9 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - pysjef >=1.42.3
+    - pysjef >=1.45.29
     - numpy
-    - regex
+    - lxml
     - scipy >=1.9.3
     - chemcoord
     - quadpy
