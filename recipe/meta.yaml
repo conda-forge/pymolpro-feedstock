@@ -34,6 +34,7 @@ requirements:
     - python >={{ python_min }}
     - pysjef >=1.45.29
     - numpy
+    - regex
     - lxml
     - scipy >=1.9.3
     - chemcoord
@@ -41,6 +42,7 @@ requirements:
     - ase
     - jsonschema >=4.0.0
     - pandas <3
+    - jinja2
 
 test:
   imports:
