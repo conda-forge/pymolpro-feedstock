@@ -27,19 +27,20 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - scipy >=1.9.3
-    - setuptools
-    - setuptools_scm
+    - setuptools >=64
+    - setuptools_scm >=8
+    - wheel
   run:
     - python >={{ python_min }}
-    - pysjef >=1.45.29
+    - pysjef >=1.45.31
     - numpy
     - regex
     - lxml
     - scipy >=1.9.3
     - chemcoord
-    - quadpy
-    - ase
+    # upstream requires legacy-quadpy==0.16.10, which is the quadpy 0.16.10 code (module name quadpy)
+    - quadpy ==0.16.10
+    - ase >=3.23.0
     - jsonschema >=4.0.0
     - pandas <3
     - jinja2
